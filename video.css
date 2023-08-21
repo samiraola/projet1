@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #000;
+}
+
+.open{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(71, 6, 6);
+    position: fixed;
+    z-index: 10;
+}
+.open ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    line-height: 65px;
+   
+
+}
+.open ul li {
+    list-style: none;
+}
+.open ul li a{
+    color: rgb(224, 219, 219);
+    text-decoration: none;
+}
+.open ul li .a1{
+    color: rgba(121, 70, 70, 0.76);
+    font-size: 30px;
+}
+.open ul .classe{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: red;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  margin-top: 20px;
+ 
+}
+.open ul .classe .a2{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(224, 219, 219);
+   
+}
+
+
+.video {
+  
+   
+}
+.video h1{
+    
+   text-align: center;
+    padding: 100px;
+   color: #ffff;
+     
+} 
+
+.box{
+  
+    padding: 100px;
+    width: 100%;
+    height: 100%;
+   
+   http://127.0.0.1:5500/images/affiche_guerande_un_peu_de_la_beaute_du_monde.jpeg
+  
+}
+.box img{
+    margin-top: -100px;
+    margin-left: -100px;
+    
+}
+.box span{
+    width: 200px;
+    height: 30px;
+   margin-top: 100px;
+    background-color:  rgb(71, 6, 6);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    color: #ffff;
+}
+.vire{
+    display: grid;
+    grid-template-columns: 450px 450px 450px;
+    align-items: center;
+    justify-content: center;
+  
+    width: 100%;
+    
+   
+}
+
+
+
+/* footer */
+
+ .rames{
+    width: 100%;
+    height: 300px;
+    background-color: #a26161; 
+   display: flex;
+   
+}
+
+.rame{
+    color: #ffff;
+}
+
+.contact p{
+    color: #ffff;
+  display: flex;
+   text-align: center;
+   justify-content: center;
+   margin-left: 100px; 
+  
+}  
+
+
