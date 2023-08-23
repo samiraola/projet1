@@ -3,21 +3,22 @@
     margin: 0;
     padding: 0;
 }
+
 body{
   
     font-family: Indie Flower;
     background-color: #000;
+   
 }
 
 .open{
     width: 100%;
     height: 70px;
-    
     position: fixed;
+   top: 0;
     border: 1px solid #000;
-background: #2D2424;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
+    background: #2D2424;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
 }
 .open ul {
@@ -25,7 +26,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     justify-content: space-between;
     text-align: center;
     line-height: 65px;
-    z-index: 10;
+   
 
 }
 .open ul li {
@@ -59,6 +60,403 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .open ul .classe .a2{
      text-align: center;
+    text-decoration: none;
+   
+    color: #DCD9D9;
+    text-align: center;
+  
+}
+
+
+.musique{
+   
+}
+.hidden{
+    width: 700px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/c-d-x-PDX_a_82obo-unsplash.jpg);
+    background-size: cover;
+   margin: 0 auto;
+    margin-top: 100px;
+}
+.pompier{
+    
+    display: grid;
+    grid-template-columns: 450px 450px ;
+    align-items: center;
+    justify-content: center;
+   padding: 20px;
+   margin-top: 50px;
+  
+}
+
+.pompier .ride{
+    width: 500px;
+    height:200px;
+    background-color: #872525;
+    background-image: url(images/matt-botsford-OKLqGsCT8qs-unsplash.jpg);
+    background-size: cover;
+    margin-left: -100px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.pompier .rade{
+    width: 500px;
+    height:200px;
+    background-color: #872525;
+    margin-left: 100px;
+    margin-top: 50px;
+    background-image: url(images/david-kristianto-sR6YS5ZnMpc-unsplash.jpg);
+    background-size: cover;
+    border-radius: 10px;
+   
+}
+
+.pompier .rude{
+    width: 500px;
+    height:200px;
+    background-color: #872525;
+    margin-left: -100px;
+    margin-top: 50px;
+    background-image: url(images/adrian-korte-5gn2soeAc40-unsplash.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.pompier .rode{
+    width: 500px;
+    height:200px;
+    background-color: #872525;
+    background-image: url(images/kelly-sikkema-E5QVkd3c5Ew-unsplash.jpg);
+    background-size: cover;
+    margin-left: 100px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.pompier span{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+
+
+
+
+
+
+/* line */
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #ffff;
+}
+
+/* footer */
+
+ .rames{
+    width: 100%;
+    height: 300px;
+    background-color: #000; 
+   display: flex;
+   justify-content: space-between;
+   
+}
+.rames span{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #872525;
+    
+    
+
+}
+
+.rame{
+    color: #ffff;
+}
+.rame p{
+    margin-top: 20px;
+    text-decoration: underline;
+    padding: 30px;
+    font-size: 24px;
+}
+.rame li{
+    list-style: none;
+    margin-left: 20px;
+    padding: 5px;
+}
+.contact{
+   
+   margin-top: 50px;
+}
+.ben{
+    color:  #ffff;
+    font-size: 24px;
+    text-decoration: underline;
+   
+}
+.gazo{
+    padding: 20px;
+    margin-left: -40px;
+}
+
+.bar{
+    color: #ffff;
+    display: flex;
+   text-align: center;
+   justify-content: center;
+   vertical-align: middle;
+   line-height: 20px;
+   padding: 10px;
+}  
+
+.bor{
+    color: #ffff;
+    display: flex;
+   text-align: center;
+   justify-content: center;
+  
+   vertical-align: middle;
+   line-height: 20px;
+   padding: 10px;
+}  
+
+.bir{
+    color: #ffff;
+    display: flex;
+   text-align: center;
+   justify-content: center;
+  
+   vertical-align: middle;
+   line-height: 20px;
+   padding: 10px;
+  
+}  
+
+.bug{
+    color: #ffff;
+    display: flex;
+   text-align: center;
+   justify-content: center;
+   vertical-align: middle;
+   line-height: 20px;
+  padding: 10px;
+}   
+
+.contact img{
+    vertical-align: middle;
+   margin-right: 20px;
+}
+.conect{
+   
+    margin-right: 200px;
+    padding: 50px;
+}
+.conect p{
+    text-decoration: underline;
+    font-size: 24px;
+    color: #ffff;
+}
+.conect input{
+
+ width: 150px;
+ height: 30px;
+margin-top: 15px;
+
+border: 1px solid rgba(121, 70, 70, 0.267);
+
+  
+}
+
+ ::placeholder {
+  color: black;
+  font-size: 1rem;
+  padding: 20px;
+  
+}
+.conect .classe{
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    background: #872525;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ margin-left: 30px;
+ 
+  
+}
+.conect .classe a{
+    text-align: center;
+    text-decoration: none;
+   
+    color: #DCD9D9;
+    text-align: center;
+  
+}
+
+
+
+
+
+
+
+
+
+
+/* line */
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #ffff;
+}
+
+/* footer */
+
+ .rames{
+    width: 100%;
+    height: 300px;
+    background-color: #000; 
+   display: flex;
+   justify-content: space-between;
+   
+}
+.rames span{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #872525;
+    
+    
+
+}
+
+.rame{
+    color: #ffff;
+}
+.rame p{
+    margin-top: 20px;
+    text-decoration: underline;
+    padding: 30px;
+    font-size: 24px;
+}
+.rame li{
+    list-style: none;
+    margin-left: 20px;
+    padding: 5px;
+}
+.contact{
+   
+   margin-top: 50px;
+}
+.ben{
+    color:  #ffff;
+    font-size: 24px;
+    text-decoration: underline;
+   
+}
+.gazo{
+    padding: 20px;
+    margin-left: -40px;
+}
+
+.bar{
+    color: #ffff;
+    display: flex;
+   text-align: center;
+   justify-content: center;
+   vertical-align: middle;
+   line-height: 20px;
+   padding: 10px;
+}  
+
+.bor{
+    color: #ffff;
+    display: flex;
+   text-align: center;
+   justify-content: center;
+  
+   vertical-align: middle;
+   line-height: 20px;
+   padding: 10px;
+}  
+
+.bir{
+    color: #ffff;
+    display: flex;
+   text-align: center;
+   justify-content: center;
+  
+   vertical-align: middle;
+   line-height: 20px;
+   padding: 10px;
+  
+}  
+
+.bug{
+    color: #ffff;
+    display: flex;
+   text-align: center;
+   justify-content: center;
+   vertical-align: middle;
+   line-height: 20px;
+  padding: 10px;
+}   
+
+.contact img{
+    vertical-align: middle;
+   margin-right: 20px;
+}
+.conect{
+   
+    margin-right: 200px;
+    padding: 50px;
+}
+.conect p{
+    text-decoration: underline;
+    font-size: 24px;
+    color: #ffff;
+}
+.conect input{
+
+ width: 150px;
+ height: 30px;
+margin-top: 15px;
+
+border: 1px solid rgba(121, 70, 70, 0.267);
+
+  
+}
+
+ ::placeholder {
+  color: black;
+  font-size: 1rem;
+  padding: 20px;
+  
+}
+.conect .classe{
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    background: #872525;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ margin-left: 30px;
+ 
+  
+}
+.conect .classe a{
+    text-align: center;
     text-decoration: none;
    
     color: #DCD9D9;
