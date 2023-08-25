@@ -95,7 +95,7 @@ body{
 .pompier .ride{
     width: 500px;
     height:200px;
-    background-color: #872525;
+   
     background-image: url(images/matt-botsford-OKLqGsCT8qs-unsplash.jpg);
     background-size: cover;
     margin-left: -100px;
@@ -106,7 +106,7 @@ body{
 .pompier .rade{
     width: 500px;
     height:200px;
-    background-color: #872525;
+   
     margin-left: 100px;
     margin-top: 50px;
     background-image: url(images/david-kristianto-sR6YS5ZnMpc-unsplash.jpg);
@@ -118,7 +118,7 @@ body{
 .pompier .rude{
     width: 500px;
     height:200px;
-    background-color: #872525;
+   
     margin-left: -100px;
     margin-top: 50px;
     background-image: url(images/adrian-korte-5gn2soeAc40-unsplash.jpg);
@@ -129,7 +129,7 @@ body{
 .pompier .rode{
     width: 500px;
     height:200px;
-    background-color: #872525;
+   
     background-image: url(images/kelly-sikkema-E5QVkd3c5Ew-unsplash.jpg);
     background-size: cover;
     margin-left: 100px;
