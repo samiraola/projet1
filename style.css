@@ -45,6 +45,10 @@ body{
     
   
 }
+.open ul li a:hover {
+    text-decoration: underline;
+    color: #872525;
+}
 .open .sami span{
     color: #872525;
     text-align: center;
@@ -75,8 +79,6 @@ body{
     text-align: center;
   
 }
-
-
 
  
 @media screen and (max-width: 768px){
@@ -181,74 +183,78 @@ body{
 
 
 .pages p {
-    text-align: center;
-    justify-content: center;
+  
     color: #fff;
     display: flex;
-    position: sticky;
-    z-index: 1;
-  
+   position: relative;
+  font-size: 25px;
  
 }
+
 .pages .boite{
-  top: 100px;
-    left: 200px;
-    
+    justify-content: center;
+  position: absolute;
+    margin-top: 200px;
+    left: 400px; 
+ 
+  z-index: -1;
+
 }
 .pages .bonj{
-    top: 200px;
-    right: 00px;
+    position: absolute;
+    justify-content: center;
+    margin-top: 200px;
+   right: 400px;
+ 
+  z-index: -1;
+ 
    
    
 }
-/* 
+
 .pages .page {
 
     width: 200px;
     height: 180px;
     background: #2D2424;
    
-  margin-top: auto;
-
+ color: #fff;
+    
    border-radius: 20px;
    padding: 20px;
    margin-left: 100px;
     
 }
-
-.page .rive{
-    
-    
-    color: #DCD9D9;
-  
-}
 .page button{
 
-    width: 160px;
+    width: 140px;
     height: 30px;
-   
+   margin-top: 50px;
     border-radius: 30px;
-   
+   outline: none;
     cursor: pointer;
-}   */
+    background: #872525;
+    color: #fff;
+    border: none;
+}   
 
 
 .recherche{
    display: flex;
   justify-content: flex-end;
- margin-top: -150px;
+ margin-top: -200px;
  
 }
 .recherche input{
-    width: 195px;
+    width: 190px;
     height: 42px;
    
-    display: flex;
+    /* display: flex; */
     justify-content: flex-start;
- 
+    border: none;
   
+  border-radius: 5px 0px 0px 5px;
    
-    border-radius: 5px;
     background: rgba(255, 255, 255, 0.50);
     outline: none;
   
@@ -260,10 +266,17 @@ body{
     color: #fff;
     
 }
+.recherche span{
+    width: 50px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.50);
+    margin-right: 200px;
+    border-radius:0px 5px 5px 0px;
+}
 .recherche span img{
-    width: 20px;
-    height: 20px;
-    margin-right: 20px;
+    width: 70px;
+    height: 30px;
+  margin-top: 8px;
   
 }
 
@@ -278,11 +291,12 @@ body{
    margin: 0 auto;
   
    margin-top: 400px;
-   
- 
- 
+}
+.photo :hover{
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   
-   
 }
 .wesl{
     width: 206px;

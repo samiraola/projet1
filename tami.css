@@ -164,10 +164,22 @@ body{
 .video h1{
     
    text-align: center;
-    padding: 100px;
+    padding: 50px;
    color: #ffff;
      
 } 
+
+
+.vire{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto ;
+  
+    width: 100%;
+   border: 1px solid rgb(71, 6, 6);
+   background-color: aqua;
+   
+}
 
 .box{
   
@@ -179,34 +191,25 @@ body{
   
 }
 .box img{
-    margin-top: -100px;
-     margin-left: -100px; 
+    width: 500px;
+    height: 300px;
+   
+     margin-left: 250px; 
     justify-content: center;
     border-radius: 20px;
-   display: flex;
-   flex-wrap: wrap;
+  
    
 }
 .box span{
     width: 200px;
     height: 30px;
    margin-top: 50px; 
-   margin-left: -100px;
+   margin-left: 350px;
     background-color:  rgb(71, 6, 6);
    display: flex;
    justify-content: center;
    align-items: center;
     color: #ffff;
-}
-.vire{
-    display: grid;
-    grid-template-columns: 250px 250px ;
-    align-items: center;
-    justify-content: center;
-    
-    width: 100%;
-    
-   
 }
 
 
