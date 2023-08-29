@@ -9,13 +9,13 @@
 
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgba(121, 70, 70, 0.76);
+    background-color: rgba(137, 43, 226, 0.526)
 }
  
 .container{
     width: 300px;
     height: 340px;
-    background-color: rgba(121, 70, 70, 0.267); 
+    background-color: rgba(92, 5, 173, 0.472); 
    background-color: 50%;
     opacity: 100;
     margin: 0 auto;
@@ -40,10 +40,10 @@ body{
     margin-top: 30px;
     width: 250px;
     height: 40px;
-    background-color: rgba(121, 70, 70, 0.267); 
+   
     background-color: 0%;
     border-radius: 10px;
-   border: 1px solid rgba(121, 70, 70, 0.267);
+  
   
    
 }
@@ -57,7 +57,8 @@ span a{
     width: 100px;
     height: 30px;
     border-radius: 20px;
-    background-color: #872525;
+   
+background: rgba(179, 144, 212, 0.56);
    display: flex;
    margin-left: 70px;
    justify-content: center;
