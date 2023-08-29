@@ -171,6 +171,7 @@ body{
 
 
 .vire{
+    
     display: grid;
     gap: 50px;
     grid-template-columns: auto auto ;
