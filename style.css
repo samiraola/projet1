@@ -80,9 +80,14 @@ body{
     text-align: center;
   
 }
-
+.va2{
+    display: none;
+}
  
 @media screen and (max-width: 768px){
+    .va2{
+        display: block;
+    }
     .open{
        display: none;
     }
@@ -199,7 +204,9 @@ body{
    border-radius: 20px;
    padding: 20px;
    margin-left: 100px;
-    
+   position: relative;
+   top: 150px;
+   z-index: -1;
 }
 .page button{
 
@@ -269,7 +276,7 @@ body{
    margin: 0 auto;
   
   position: relative;
-  bottom: -250px;
+  bottom: -300px;
   z-index: -1;
 }
 .photo :hover{
@@ -379,7 +386,7 @@ body{
     height: auto;
     background-color: #000; 
    display: flex;
-    /* margin-top: 250px;  */
+   
    justify-content: space-around; 
    
 }
