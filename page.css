@@ -10,9 +10,10 @@ body{
     background-image: url(images/hanny-naibaho-aWXVxy8BSzc-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    
-    height: 100vh;
-  
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  overflow-x: hidden;
 }
 
 .open{
@@ -21,7 +22,7 @@ body{
     position: fixed;
    
     border: 1px solid #000;
-    background: #2D2424;
+    background-color: rgb(92, 5, 173);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
 }
@@ -45,6 +46,10 @@ body{
     
   
 }
+.open ul li a:hover {
+    text-decoration: underline;
+    color: #872525;
+}
 .open .sami span{
     color: #872525;
     text-align: center;
@@ -60,14 +65,13 @@ body{
     height: 30px;
    
     border-radius: 30px;
-    background: #872525;
+    background: rgba(179, 144, 212, 0.56);
    display: flex;
    justify-content: center;
    align-items: center;
  
  
 }
-
 .open ul .classe .a2{
      text-align: center;
     text-decoration: none;
@@ -76,32 +80,99 @@ body{
     text-align: center;
   
 }
-/* 
-.open ul .classe .a1{
-    text-align: center;
-   text-decoration: none;
-  
-   color: #DCD9D9;
-   text-align: center;
- 
-} */
-
-
 
  
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
     .open{
-        height: 100px;
-    }
-    .open ul{
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .open li{
-        margin: 5px;
+       display: none;
     }
     
 } 
+
+#menu-toggle{
+    display: none;
+}
+#menu-icon{
+    display: block;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border-color: #333;
+    color: #fff;
+}
+#menu{
+    display: none;
+}
+#menu .sami{
+    background-color: rgb(92, 5, 173);
+}
+
+
+#menu li {
+    padding: 10px;
+    background-color: rgba(92, 5, 173, 0.472);
+}
+#menu li a {
+    text-decoration: none;
+    color: rgb(224, 219, 219);
+}
+#content {
+    padding: 20px;
+}
+@media (max-width : 768px){
+    #menu-toggle:checked ~ #menu{
+        display: block;
+    }
+
+    #menu-toggle:checked ~ #menu-icon{
+         background-color: #000; 
+        color: #333;
+    }
+    #menu{
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        height: 290px;
+        background-color: rgba(92, 5, 173, 0.472);
+    }
+    #menu li {
+        border-bottom:  1px solid #ccc;
+        list-style: none;
+    }
+    #menu li :last-child{
+        border-bottom: none;
+    }
+    #menu .classe {
+        width: 100px;
+        height: 30px;
+       
+        border-radius: 30px;
+        background-color: rgba(92, 5, 173, 0.472);
+    }
+    #menu .a2{
+        text-align: center;
+        text-decoration: none;
+        color: #DCD9D9; 
+        line-height: 30px;
+        margin-left: 15px;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .corps{
@@ -113,74 +184,78 @@ body{
 
 
 .pages p {
-    text-align: center;
-    justify-content: center;
+  
     color: #fff;
     display: flex;
-    position: sticky;
-    z-index: 1;
-  
+   position: relative;
+  font-size: 25px;
  
 }
+
 .pages .boite{
-  top: 100px;
-    left: 200px;
-    
+    justify-content: center;
+  position: absolute;
+    margin-top: 200px;
+    left: 400px; 
+ 
+  z-index: -1;
+
 }
 .pages .bonj{
-    top: 200px;
-    right: 00px;
+    position: absolute;
+    justify-content: center;
+    margin-top: 200px;
+   right: 400px;
+ 
+  z-index: -1;
+ 
    
    
 }
-/* 
+
 .pages .page {
 
     width: 200px;
     height: 180px;
-    background: #2D2424;
+    background-color: rgb(92, 5, 173);
    
-  margin-top: auto;
-
+ color: #fff;
+    
    border-radius: 20px;
    padding: 20px;
    margin-left: 100px;
     
 }
-
-.page .rive{
-    
-    
-    color: #DCD9D9;
-  
-}
 .page button{
 
-    width: 160px;
+    width: 140px;
     height: 30px;
-   
+   margin-top: 50px;
     border-radius: 30px;
-   
+   outline: none;
     cursor: pointer;
-}   */
+    background: rgba(179, 144, 212, 0.56);
+    color: #fff;
+    border: none;
+}   
 
 
 .recherche{
    display: flex;
   justify-content: flex-end;
- margin-top: -150px;
+ margin-top: -200px;
  
 }
 .recherche input{
-    width: 195px;
+    width: 150px;
     height: 42px;
    
-    display: flex;
+    /* display: flex; */
     justify-content: flex-start;
- 
+    border: none;
   
+  border-radius: 5px 0px 0px 5px;
    
-    border-radius: 5px;
     background: rgba(255, 255, 255, 0.50);
     outline: none;
   
@@ -192,29 +267,39 @@ body{
     color: #fff;
     
 }
+.recherche span{
+    width: 50px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.50);
+    margin-right: 200px;
+    border-radius:0px 5px 5px 0px;
+}
 .recherche span img{
-    width: 20px;
-    height: 20px;
-    margin-right: 20px;
+    width: 70px;
+    height: 30px;
+  margin-top: 8px;
   
 }
 
 
 
 .photo{
-   
+   width: 100%;
+   max-width: 100%;
+   height: auto;
     display: flex;
- 
+  
    justify-content: center;
    align-items: center;
    margin: 0 auto;
   
-   margin-top: 400px;
-   
- 
- 
+   margin-top: 800px;
+}
+.photo :hover{
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   
-   
 }
 .wesl{
     width: 206px;
@@ -285,15 +370,6 @@ body{
 
 
  
-@media screen and (max-width: 780px){
-    .photo {
-        background-color: #000;
-      flex-wrap: wrap;
-    }
-
-    
-    
-} 
 
 
 
@@ -303,7 +379,7 @@ body{
    /* position: relative; */
 }
 .line{
-    margin-top: 320px;   
+    margin-top: 300px;   
     width: 100%;
     height: 1px;
     background-color: #ffff;
@@ -322,7 +398,8 @@ body{
 
  .rames{
     width: 100%;
-    height: 300px;
+   
+    height: auto;
     background-color: #000; 
    display: flex;
     /* margin-top: 250px;  */
@@ -448,7 +525,7 @@ border: 1px solid rgba(121, 70, 70, 0.267);
     width: 100px;
     height: 30px;
     border-radius: 30px;
-    background: #872525;
+    background: rgba(179, 144, 212, 0.56);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -464,28 +541,80 @@ border: 1px solid rgba(121, 70, 70, 0.267);
     text-align: center;
   
 }
+
+
  
-@media screen and (max-width: 780px){
+ 
+@media screen and (max-width: 1525px){
+   
+    .photo{
+        
+        /* margin-top: 450px;  */
+    }
+
+    .line{
+        /* margin-top: -45px;  */
+       
+    }
     .rames{
         width: 100%;
-        height: 450px;
-        display: flex;
+        max-width: 100%;
+        height: auto;
+        /* display: flex;
         flex-wrap: wrap;  
-        margin-top: -320px;
+        margin-top: -15px; */
     }
-    .conect {
-        /* margin-top: -300px;
-        margin-right: 300px;
-         */
+    .rames .rame{
+        margin-top: 50px;
+    }
+    .rames .contact{
+        margin-top: 99px;
+    }
+    .rames .conect {
+        margin-top: 98px;
+       
     }
     
     
 } 
 
-@media screen and (min-width : 781px)  and (max-width : 1525px){
-
-}
 
 
 
+@media screen and(max-width : 1101px)   {
 
+    
+    .line{
+         margin-top: 5px;  
+       
+    }
+    .rames{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        /* display: flex;
+        flex-wrap: wrap;   */
+        margin-top: 105px;
+    }
+     
+ }
+ 
+@media screen and (max-width: 780px){
+    
+    .photo {
+        display: flex;
+        flex-wrap: wrap;
+      
+      /* flex-wrap: wrap; */
+    }
+    .rames{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        /* display: flex;
+        flex-wrap: wrap;   */
+        /* margin-top: 105px; */
+    }
+    
+    
+} 

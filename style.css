@@ -13,7 +13,7 @@ body{
     max-width: 100%;
     width: 100%;
     height: auto;
-  overflow-x: hidden;
+ 
 }
 
 .open{
@@ -183,41 +183,16 @@ body{
 
 
 
-.pages p {
-  
-    color: #fff;
-    display: flex;
-   position: relative;
-  font-size: 25px;
- 
-}
-
-.pages .boite{
-    justify-content: center;
-  position: absolute;
-    margin-top: 200px;
-    left: 400px; 
- 
-  z-index: -1;
-
-}
-.pages .bonj{
-    position: absolute;
-    justify-content: center;
-    margin-top: 200px;
-   right: 400px;
- 
-  z-index: -1;
  
    
    
-}
+
 
 .pages .page {
 
     width: 200px;
     height: 180px;
-    background: #2D2424;
+    background-color: rgb(92, 5, 173);
    
  color: #fff;
     
@@ -234,7 +209,7 @@ body{
     border-radius: 30px;
    outline: none;
     cursor: pointer;
-    background: #872525;
+    background: rgba(179, 144, 212, 0.56);
     color: #fff;
     border: none;
 }   
@@ -247,7 +222,7 @@ body{
  
 }
 .recherche input{
-    width: 190px;
+    width: 150px;
     height: 42px;
    
     /* display: flex; */
@@ -293,7 +268,9 @@ body{
    align-items: center;
    margin: 0 auto;
   
-   margin-top: 800px;
+  position: relative;
+  bottom: -250px;
+  z-index: -1;
 }
 .photo :hover{
     -ms-transform: scale(1.1); 
@@ -398,7 +375,7 @@ body{
 
  .rames{
     width: 100%;
-   
+  
     height: auto;
     background-color: #000; 
    display: flex;
@@ -525,7 +502,7 @@ border: 1px solid rgba(121, 70, 70, 0.267);
     width: 100px;
     height: 30px;
     border-radius: 30px;
-    background: #872525;
+    background: rgba(179, 144, 212, 0.56);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -600,21 +577,51 @@ border: 1px solid rgba(121, 70, 70, 0.267);
  }
  
 @media screen and (max-width: 780px){
-    
+    .pages .page{
+       position: relative;
+       top: 70px;
+       right: 90px;
+       z-index: -1;
+    }
+    .recherche input  {
+        width: 100px;
+      
+    }
+    .recherche input span {
+        
+       margin-top: -50px;
+    }
     .photo {
-        display: flex;
-        flex-wrap: wrap;
+        /* display: flex;
+        flex-wrap: wrap; */
       
       /* flex-wrap: wrap; */
     }
-    .rames{
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        /* display: flex;
-        flex-wrap: wrap;   */
-        /* margin-top: 105px; */
+    .photo .wesl{
+        width: 100px;
+        height: 110px;
     }
+    .photo .bol{
+        width: 100px;
+        height: 120px;
+    }
+    .photo .bul{
+        width: 100px;
+        height: 130px;
+    }
+    .photo .lot{
+        width: 100px;
+        height: 140px;
+    }
+     
+    
+   .rames{
+       width: 100%;
+       max-width: 100%;
+       height: auto;
+      flex-wrap: wrap;
+   }
+   
     
     
 } 

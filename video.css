@@ -15,7 +15,7 @@ body{
     position: fixed;
    
     border: 1px solid #000;
-    background: #2D2424;
+    background-color: rgb(92, 5, 173);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
 }
@@ -39,6 +39,10 @@ body{
     
   
 }
+.open ul li a:hover {
+    text-decoration: underline;
+    color: #872525;
+}
 .open .sami span{
     color: #872525;
     text-align: center;
@@ -54,7 +58,7 @@ body{
     height: 30px;
    
     border-radius: 30px;
-    background: #872525;
+    background: rgba(179, 144, 212, 0.56);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -69,8 +73,6 @@ body{
     text-align: center;
   
 }
-
-
 
  
 @media screen and (max-width: 768px){
@@ -95,13 +97,13 @@ body{
     display: none;
 }
 #menu .sami{
-    background-color:   #2D2424;
+    background-color: rgb(92, 5, 173);
 }
 
 
 #menu li {
     padding: 10px;
-    background: #2D2424;
+    background-color: rgba(92, 5, 173, 0.472);
 }
 #menu li a {
     text-decoration: none;
@@ -125,7 +127,7 @@ body{
         left: 0;
         width: 100%;
         height: 290px;
-        background-color: #2D2424;;
+        background-color: rgba(92, 5, 173, 0.472);
     }
     #menu li {
         border-bottom:  1px solid #ccc;
@@ -139,7 +141,7 @@ body{
         height: 30px;
        
         border-radius: 30px;
-        background: #872525;
+        background-color: rgba(92, 5, 173, 0.472);
     }
     #menu .a2{
         text-align: center;
@@ -150,6 +152,8 @@ body{
         
     }
 }
+
+
 
 
 
@@ -218,7 +222,7 @@ body{
     /* position: relative; */
  }
  .line{
-     margin-top: 100px;   
+     margin-top: 300px;   
      width: 100%;
      height: 1px;
      background-color: #ffff;
@@ -237,10 +241,11 @@ body{
  
   .rames{
      width: 100%;
-     height: 300px;
+    
+     height: auto;
      background-color: #000; 
     display: flex;
-    
+     /* margin-top: 250px;  */
     justify-content: space-around; 
     
  }
@@ -363,7 +368,7 @@ body{
      width: 100px;
      height: 30px;
      border-radius: 30px;
-     background: #872525;
+     background: rgba(179, 144, 212, 0.56);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -379,21 +384,80 @@ body{
      text-align: center;
    
  }
+ 
+ 
   
- @media screen and (max-width: 780px){
-     .rames{
-         width: 100%;
-         height: 450px;
-         display: flex;
-         flex-wrap: wrap;  
+  
+ @media screen and (max-width: 1525px){
+    
+     .photo{
+         
+         /* margin-top: 450px;  */
+     }
+ 
+     .line{
+         /* margin-top: -45px;  */
         
      }
-     .conect {
-         /* margin-top: -300px;
-         margin-right: 300px;
-          */
+     .rames{
+         width: 100%;
+         max-width: 100%;
+         height: auto;
+         /* display: flex;
+         flex-wrap: wrap;  
+         margin-top: -15px; */
+     }
+     .rames .rame{
+         margin-top: 50px;
+     }
+     .rames .contact{
+         margin-top: 99px;
+     }
+     .rames .conect {
+         margin-top: 98px;
+        
      }
      
      
  } 
  
+ 
+ 
+ 
+ @media screen and(max-width : 1101px)   {
+ 
+     
+     .line{
+          margin-top: 5px;  
+        
+     }
+     .rames{
+         width: 100%;
+         max-width: 100%;
+         height: auto;
+         /* display: flex;
+         flex-wrap: wrap;   */
+         margin-top: 105px;
+     }
+      
+  }
+  
+ @media screen and (max-width: 780px){
+     
+     .photo {
+         display: flex;
+         flex-wrap: wrap;
+       
+       /* flex-wrap: wrap; */
+     }
+     .rames{
+         width: 100%;
+         max-width: 100%;
+         height: auto;
+         /* display: flex;
+         flex-wrap: wrap;   */
+         /* margin-top: 105px; */
+     }
+     
+     
+ } 
