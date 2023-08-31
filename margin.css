@@ -80,6 +80,10 @@ span a{
     margin-left: 30px;
     margin-top: 10px;
 }
+.sac a{
+    color: #fff;
+    text-decoration: none;
+}
 
 .classet{
    display: flex;

@@ -4,21 +4,26 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #000;
+    background-color: #000; 
+   
 }
 .open{
-    width: 50%;
+    width: 35%;
     height: 400px;
-    background-color: bisque;
+   
+    background-color: rgba(92, 5, 173, 0.472);
     margin: 0 auto;
     margin-top: 200px;
     display: flex;
    
 }
+.open a img{
+    filter: invert();
+}
 .content{
-    width: 50%;
+    width: 20%;
     height: 300px;
-    background-color: cornflowerblue;
+    background-color: rgba(137, 43, 226, 0.526);  
   margin-left:10px ;
     margin-top: 20px;
     border-radius: 10px;
@@ -34,7 +39,7 @@ body{
 }
 .content span {
     text-align: center;
-    
+    color: #fff;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
@@ -43,9 +48,10 @@ body{
     margin-top: 50px;
 }
 .over{
-    width: 39%;
+    width: 35%;
     height: 300px;
-    background-color: brown;
+   
+    background-color: rgba(92, 5, 173, 0.472);
   margin-left: 10px;
     margin-top: 20px;
     border-radius: 10px;
@@ -54,7 +60,7 @@ body{
 }
 .over span{
     text-align: center;
-    
+    color: #fff;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
@@ -63,7 +69,7 @@ body{
 }
 .over p{
   margin-left: 10px;
-  
+  color: #fff;
     text-transform: uppercase;
     display: flex;
   
@@ -106,16 +112,18 @@ body{
         max-width: 100%;
     }
 }
-@media screen and (max-width : 1200px){
+@media screen and (max-width : 2000px){
     .open{
-        width: auto;
+        width: 70%;
         height: auto;
         max-width: 100%;
+        justify-content: center;
+        align-items: center;
     }
     .content{
         width: auto;
         height: auto;
-        max-width: 100%;
+        max-width: 80%;
     }
     .over{
         width: auto;
@@ -123,48 +131,3 @@ body{
         max-width: 100%;
     }
 }
-/* 
-
-@media screen and (max-width : 1280px)  {
-    .content span{
-       font-size:10px ;
-    }
-    .over p{
-        font-size:10px ;
-    }
-}
-
-
-    .content span{
-       font-size:5px ;
-    }
-    .over p{
-        font-size:5px ;
-    }
-} */
-/* 
-h1 {font-size: 3em;}
-
-@media screen and (max-width: 64em) {
-    .content span{
-       
-    font-size: 0.5em;
-  }
-  .over p{
-    font-size: 0.5em;
-  }
-}
-
-@media screen and (max-width: 50em) {
-    .over p{
-    font-size: 0.3em;
-  }
-}
-
-@media screen and (max-width : 850px) {
-    .content img{
-        width: 40px;
-        height: 40px;
-    }
-} */
-    

@@ -22,13 +22,14 @@ body{
     position: fixed;
    
     border: 1px solid #000;
-    background-color: rgb(92, 5, 173);
+    
+    background-color: #000;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
 }
 .open ul {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-between; 
     text-align: center;
     align-items: center;
     text-align: center;
@@ -65,7 +66,7 @@ body{
     height: 30px;
    
     border-radius: 30px;
-    background: rgba(179, 144, 212, 0.56);
+    background-color: rgb(92, 5, 173);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -80,6 +81,7 @@ body{
     text-align: center;
   
 }
+
 .va2{
     display: none;
 }
@@ -109,13 +111,13 @@ body{
     display: none;
 }
 #menu .sami{
-    background-color: rgb(92, 5, 173);
+    background: #000;
 }
 
 
 #menu li {
     padding: 10px;
-    background-color: rgba(92, 5, 173, 0.472);
+    background: #000;
 }
 #menu li a {
     text-decoration: none;
@@ -138,8 +140,8 @@ body{
         top: 40px;
         left: 0;
         width: 100%;
-        height: 290px;
-        background-color: rgba(92, 5, 173, 0.472);
+        height: 220px;
+        background: #000;
     }
     #menu li {
         border-bottom:  1px solid #ccc;
@@ -153,7 +155,7 @@ body{
         height: 30px;
        
         border-radius: 30px;
-        background-color: rgba(92, 5, 173, 0.472);
+        background-color: rgb(92, 5, 173);
     }
     #menu .a2{
         text-align: center;
@@ -197,9 +199,9 @@ body{
 
     width: 200px;
     height: 180px;
-    background-color: rgb(92, 5, 173);
+    background-color: #fff;
    
- color: #fff;
+ color: #000;
     
    border-radius: 20px;
    padding: 20px;
@@ -216,7 +218,7 @@ body{
     border-radius: 30px;
    outline: none;
     cursor: pointer;
-    background: rgba(179, 144, 212, 0.56);
+    background-color: rgb(92, 5, 173);
     color: #fff;
     border: none;
 }   
@@ -235,10 +237,10 @@ body{
     /* display: flex; */
     justify-content: flex-start;
     border: none;
-  
+  margin-top: 100px;
   border-radius: 5px 0px 0px 5px;
    
-    background: rgba(255, 255, 255, 0.50);
+    background: #fff;
     outline: none;
   
 
@@ -246,15 +248,16 @@ body{
 
 ::placeholder{
    
-    color: #fff;
+    color: #000;
     
 }
 .recherche span{
     width: 50px;
     height: 42px;
-    background: rgba(255, 255, 255, 0.50);
+    background: rgba(244, 242, 242, 0.5);
     margin-right: 200px;
     border-radius:0px 5px 5px 0px;
+    margin-top: 100px;
 }
 .recherche span img{
     width: 70px;
@@ -304,7 +307,7 @@ body{
 
 .bol{
     width: 208px;
-    height: 260px;
+    height: 240px;
     flex-shrink: 0;
     background-image: url(images/images\ \(2\).jpeg);
     background-size: cover;
@@ -320,8 +323,8 @@ body{
 
 .bul{
     width: 250px;
-    height: 300px;
-    flex-shrink: 0;
+    height: 240px;
+  
    
     background-image: url(images/5_74DPx.jpeg);
     background-size: cover;
@@ -338,8 +341,8 @@ body{
 
 .lot{
     width: 260px;
-    height: 350px;
-    flex-shrink: 0;
+    height: 240px;
+  
     background-image: url(images/ninho-20211117115811.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -359,9 +362,7 @@ body{
 
 /* line */
 
-.ligne{
-   /* position: relative; */
-}
+
 .line{
     margin-top: 300px;   
     width: 100%;
@@ -371,14 +372,6 @@ body{
 
 
 
-/* line */
-/* .line{
-    width: 100%;
-    height: 1px;
-    background-color: #ffff;
-} */
-
-/* footer */
 
  .rames{
     width: 100%;
@@ -387,16 +380,17 @@ body{
     background-color: #000; 
    display: flex;
    
-   justify-content: space-around; 
+   justify-content: space-between; 
    
 }
+
 .rames span{
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    /* font-size: 40px; */
-    color: #872525;
+   
+   
     
     
 
@@ -405,6 +399,7 @@ body{
 .rame{
     color: #ffff;
 }
+
 .rame p{
     margin-top: 20px;
     text-decoration: underline;
@@ -419,6 +414,7 @@ body{
 .contact{
    
    margin-top: 50px;
+   justify-content: center;
 }
 .ben{
     color:  #ffff;
@@ -479,37 +475,24 @@ body{
    margin-right: 20px;
 }
 .conect{
-   margin-top: 50px;
-    /*margin-right: 200px;*/
-    /* padding: 50px;   */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   margin-top: 20px;
+   
 }
 .conect p{
     text-decoration: underline;
    
     color: #ffff;
 }
-.rames .conect input{
 
- width: 150px;
- height: 30px;
- margin-top: 15px; 
-
-border: 1px solid rgba(121, 70, 70, 0.267);
-
-  
-}
-
- ::placeholder {
-  color: black;
-  /* font-size: 1rem; */
-  padding: 20px;
-  
-}
 .conect .classe{
     width: 100px;
     height: 30px;
     border-radius: 30px;
-    background: rgba(179, 144, 212, 0.56);
+    background-color: rgb(92, 5, 173);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -529,7 +512,7 @@ border: 1px solid rgba(121, 70, 70, 0.267);
 
  
  
-@media screen and (max-width: 1525px){
+@media screen and (max-width: 10000px){
    
     .photo{
         
@@ -576,8 +559,7 @@ border: 1px solid rgba(121, 70, 70, 0.267);
         width: 100%;
         max-width: 100%;
         height: auto;
-        /* display: flex;
-        flex-wrap: wrap;   */
+       
         margin-top: 105px;
     }
      
@@ -586,39 +568,42 @@ border: 1px solid rgba(121, 70, 70, 0.267);
 @media screen and (max-width: 780px){
     .pages .page{
        position: relative;
-       top: 70px;
+       top: 130px;
        right: 90px;
        z-index: -1;
     }
+
     .recherche input  {
         width: 100px;
-      
-    }
-    .recherche input span {
         
-       margin-top: -50px;
-    }
-    .photo {
-        /* display: flex;
-        flex-wrap: wrap; */
       
-      /* flex-wrap: wrap; */
     }
+
+    .recherche input span {
+       
+       
+      
+    }
+    .recherche input span img{
+        margin-top: 150px;
+
+    }
+   
     .photo .wesl{
         width: 100px;
         height: 110px;
     }
     .photo .bol{
         width: 100px;
-        height: 120px;
+        height: 110px;
     }
     .photo .bul{
         width: 100px;
-        height: 130px;
+        height: 110px;
     }
     .photo .lot{
         width: 100px;
-        height: 140px;
+        height: 110px;
     }
      
     
@@ -628,7 +613,40 @@ border: 1px solid rgba(121, 70, 70, 0.267);
        height: auto;
       flex-wrap: wrap;
    }
+   .conect{
+    position: relative;
+    top: -100px;
+
+
+    
+   }
    
     
     
 } 
+@media screen and (max-width : 350px){
+    
+    .recherche input  {
+        width: 70px;
+        
+      
+    }
+    
+    .photo .wesl{
+        width: 80px;
+        height: 110px;
+    }
+    .photo .bol{
+        width: 80px;
+        height: 110px;
+    }
+    .photo .bul{
+        width: 80px;
+        height: 110px;
+    }
+    .photo .lot{
+        width: 80px;
+        height: 110px;
+    }
+    
+}

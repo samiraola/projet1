@@ -17,13 +17,13 @@ body{
     position: fixed;
    
     border: 1px solid #000;
-    background-color: rgb(92, 5, 173);
+    background-color: #000;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
 }
 .open ul {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-between; 
     text-align: center;
     align-items: center;
     text-align: center;
@@ -60,7 +60,7 @@ body{
     height: 30px;
    
     border-radius: 30px;
-    background: rgba(179, 144, 212, 0.56);
+    background-color: rgb(92, 5, 173);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -76,8 +76,15 @@ body{
   
 }
 
+.va2{
+    display: none;
+}
  
 @media screen and (max-width: 768px){
+
+.va2{
+    display: block;
+}
     .open{
        display: none;
     }
@@ -105,7 +112,7 @@ body{
 
 #menu li {
     padding: 10px;
-    background-color: rgba(92, 5, 173, 0.472);
+    background-color: #000;
 }
 #menu li a {
     text-decoration: none;
@@ -129,7 +136,7 @@ body{
         left: 0;
         width: 100%;
         height: 290px;
-        background-color: rgba(92, 5, 173, 0.472);
+        background-color: #000;
     }
     #menu li {
         border-bottom:  1px solid #ccc;
@@ -143,7 +150,7 @@ body{
         height: 30px;
        
         border-radius: 30px;
-        background-color: rgba(92, 5, 173, 0.472);
+        background-color: rgb(92, 5, 173);
     }
     #menu .a2{
         text-align: center;
@@ -170,7 +177,10 @@ body{
     background-image: url(images/c-d-x-PDX_a_82obo-unsplash.jpg);
     background-size: cover;
    margin: 0 auto;
-    margin-top: 100px; 
+   position: relative;
+   top: 150px;
+   z-index: -1;
+   
 }
 .pompier{
     
@@ -179,7 +189,7 @@ body{
     align-items: center;
     justify-content: center;
    padding: 20px;
-   margin-top: 50px;
+   margin-top: 100px;
   
 }
 
@@ -190,7 +200,7 @@ body{
     background-image: url(images/matt-botsford-OKLqGsCT8qs-unsplash.jpg);
     background-size: cover;
     margin-left: -100px;
-    margin-top: 50px;
+    margin-top: 100px;
     border-radius: 10px;
 }
 
@@ -199,7 +209,7 @@ body{
     height:200px;
    
     margin-left: 100px;
-    margin-top: 50px;
+    margin-top: 100px;
     background-image: url(images/david-kristianto-sR6YS5ZnMpc-unsplash.jpg);
     background-size: cover;
     border-radius: 10px;
@@ -211,7 +221,7 @@ body{
     height:200px;
    
     margin-left: -100px;
-    margin-top: 50px;
+    margin-top: 100px;
     background-image: url(images/adrian-korte-5gn2soeAc40-unsplash.jpg);
     background-size: cover;
     border-radius: 10px;
@@ -224,7 +234,7 @@ body{
     background-image: url(images/kelly-sikkema-E5QVkd3c5Ew-unsplash.jpg);
     background-size: cover;
     margin-left: 100px;
-    margin-top: 50px;
+    margin-top: 100px;
     border-radius: 10px;
 }
 .pompier span{
@@ -258,7 +268,7 @@ body{
      background-color: #000; 
     display: flex;
     
-    justify-content: space-around; 
+    justify-content: space-between; 
     
  }
  .rames span{
@@ -276,6 +286,7 @@ body{
  .rame{
      color: #ffff;
  }
+ 
  .rame p{
      margin-top: 20px;
      text-decoration: underline;
@@ -350,37 +361,20 @@ body{
     margin-right: 20px;
  }
  .conect{
-    margin-top: 50px;
-     /*margin-right: 200px;*/
-     /* padding: 50px;   */
- }
- .conect p{
-     text-decoration: underline;
     
-     color: #ffff;
- }
- .rames .conect input{
- 
-  width: 150px;
-  height: 30px;
-  margin-top: 15px; 
- 
- border: 1px solid rgba(121, 70, 70, 0.267);
- 
-   
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   margin-top: 20px;
+    
  }
  
-  ::placeholder {
-   color: black;
-   /* font-size: 1rem; */
-   padding: 20px;
-   
- }
  .conect .classe{
      width: 100px;
      height: 30px;
      border-radius: 30px;
-     background: rgba(179, 144, 212, 0.56);
+     background-color: rgb(92, 5, 173);
     display: flex;
     justify-content: center;
     align-items: center;
