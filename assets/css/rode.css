@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+}
+.musique{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+ 
+}
+.songs{
+  
+    display: flex;
+    margin-top: 100px;
+
+}
+.songs img{
+    margin: 50px;
+}
+.songs audio{
+    margin-top: 500px;
+    margin-left: -350px;
+}
+
+
+@media screen and (max-width : 1480px){
+   
+    .songs{
+        display: grid;
+        /* gap: 50px 100px; */
+        margin: 0 auto ;
+        grid-template-columns: 200px 200px 200px 200px; 
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+   .songs audio{
+   
+    margin-left: -150px;
+    justify-content: center;
+    align-items: center;
+   }
+}
+
+@media screen and (max-width : 780px){
+   
+    .songs{
+        display: grid;
+        /* gap: 50px 100px; */
+        margin: 0 auto ;
+        grid-template-columns: 200px 200px ; 
+        justify-content: center;
+        align-items: center;
+    }
+}
